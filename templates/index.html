@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Algerian License Plate Detection</title>
+    <link rel="stylesheet" href="/static/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <button
+        id="night-mode-toggle"
+        aria-label="Toggle night mode"
+        title="Toggle night mode"
+      >
+        <span id="night-mode-icon">🌙</span>
+      </button>
+      <h1>Algerian License Plate Detection</h1>
+      <form id="upload-form">
+        <label for="image-upload" class="custom-file-upload">
+          <input type="file" id="image-upload" accept="image/*" required />
+          Choose Image
+        </label>
+        <div id="preview-container">
+          <img id="preview" src="#" alt="Image Preview" style="display: none" />
+        </div>
+        <button type="submit" id="predict-btn">Predict</button>
+        <button type="button" id="reset-btn">Reset</button>
+      </form>
+      <div id="result-container">
+        <h2>Prediction Result</h2>
+        <img
+          id="result-img"
+          src="#"
+          alt="Prediction Result"
+          style="display: none"
+        />
+      </div>
+    </div>
+    <footer>
+      <p>Made for Algerian License Plate Detection &copy; 2024</p>
+    </footer>
+    <script src="/static/app.js"></script>
+  </body>
+</html>
