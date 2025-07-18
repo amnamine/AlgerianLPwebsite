@@ -8,7 +8,7 @@ class YOLOApp:
     def __init__(self, root):
         self.root = root
         self.root.title('YOLO Image Predictor')
-        self.model = YOLO('best.pt')
+        self.model = YOLO('best.tflite')
         self.image_path = None
         self.img_label = tk.Label(root)
         self.img_label.pack(pady=10)

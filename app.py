@@ -5,7 +5,7 @@ import os
 import io
 
 app = Flask(__name__)
-model = YOLO('best.pt')
+model = YOLO('best.tflite')
 UPLOAD_FOLDER = 'uploads'
 RESULT_FOLDER = 'results'
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
